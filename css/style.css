@@ -3,6 +3,8 @@
 
 /* utidades */
 @import "./utidades/componentes.css";
+@import "./utidades/tipografia.css";
+@import "./utidades/cores.css";
 
 /* Home */
 @import "./home/introducao.css";
