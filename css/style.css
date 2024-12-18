@@ -1,5 +1,6 @@
 @import "./global/global.css";
 @import "./global/header.css";
+@import "./global/footer.css";
 
 /* utidades */
 @import "./utidades/componentes.css";
