@@ -127,6 +127,12 @@
 .orcamento-produto input:checked + label + .orcamento-detalhes {
   display: grid;
 }
+.termos-condicoes {
+  justify-content: start;
+  align-items: start;
+  display: flex;
+  grid-column: 1/-1;
+}
 
 @media (max-width: 1200px) {
   .orcamento-produto,
