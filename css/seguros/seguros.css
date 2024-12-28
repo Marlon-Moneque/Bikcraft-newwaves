@@ -1,6 +1,9 @@
 .seguros-bg {
   background: var(--cor-11);
 }
+.p-seguro {
+  color: var(--cor-0);
+}
 .seguros {
   padding-top: 60px;
   padding-bottom: 60px;
