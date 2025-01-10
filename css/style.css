@@ -7,6 +7,7 @@
 @import "./utidades/tipografia.css";
 @import "./utidades/cores.css";
 @import "./utidades/formulario.css";
+@import "./utidades/animacao.css";
 
 /* Home */
 @import "./home/introducao.css";

@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="stylesheet" href="/css/style.css">
   <meta charset="UTF-8">
@@ -10,6 +11,13 @@
   <meta name="description" content="Seguros da Bikcraft.">
 
   <link rel="stylesheet" href="./css/style.css">
+
+  <script>
+    document.documentElement.classList.add('js')
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body id="seguros">
@@ -37,7 +45,7 @@
     </div>
 
     <div class="seguros container">
-      <div class="seguros-item">
+      <div class="seguros-item fadeInLeft" data-anime="400">
         <h3 class="font-1-xl cor-6">PRATA</h3><span class="font-1-xl cor-0">R$ 199 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
           <li>Duas trocas por ano</li>
@@ -45,9 +53,9 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a class="botao secundario " href="./orçamento.html">Inscreva-se</a>
+        <a class="botao secundario " href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
       </div>
-      <div class="seguros-item">
+      <div class="seguros-item fadeInRight" data-anime="200">
         <h3 class="font-1-xl cor-6">OURO</h3><span class="font-1-xl cor-0">R$ 299 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
           <li>Cinco trocas por ano</li>
@@ -57,7 +65,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a class="botao" href="./orçamento.html">Inscreva-se</a>
+        <a class="botao" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
       </div>
     </div>
   </main>
@@ -104,28 +112,28 @@
     <h2 class="font-1-xxl">Perguntas frequentes<span class="cor-p1">.</span></h2>
     <dl>
       <div>
-        <dt class="font-1-mb">Qual forma de pagamento vocês aceitam?</dt>
-        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true"> Qual forma de pagamento vocês aceitam?</button></dt>
+        <dd id="pergunta1" class="font-2-s cor-9 ativa">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
       <div>
-        <dt class="font-1-mb">Como posso entrar em contato?</dt>
-        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+        <dd id="pergunta2" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
       <div>
-        <dt class="font-1-mb">Vocês possuem algum desconto?</dt>
-        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+        <dd id="pergunta3" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
       <div>
-        <dt class="font-1-mb">Qual a garantia que possuo?</dt>
-        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta4" aria-expanded="false">Qual a garantia que possuo?</button></dt>
+        <dd id="pergunta4" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
       <div>
-        <dt class="font-1-mb">Posso parcelar no boleto?</dt>
-        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+        <dd id="pergunta5" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
       <div>
-        <dt class="font-1-mb">Quantas trocas posso fazer ao ano?</dt>
-        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+        <dd id="pergunta6" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
     </dl>
   </article>
@@ -162,6 +170,8 @@
       <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="./JS/plugins/simple-anime.js"></script>
+  <script src="./JS/js.js"></script>
 </body>
 
 </html>
